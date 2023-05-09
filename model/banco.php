@@ -5,10 +5,10 @@ date_default_timezone_set('America/Sao_Paulo');
 
 // conexão com o banco de dados
 
-define('BD_SERVIDOR','localhost');
-define('BD_USUARIO','root');
-define('BD_SENHA','');
-define('BD_BANCO','psi_db');
+define('BD_SERVIDOR','psiadriana_db.mysql.dbaas.com.br');
+define('BD_USUARIO','psiadriana_db');
+define('BD_SENHA','Psidri@0306');
+define('BD_BANCO','psiadriana_db');
     
 class Banco{
 

@@ -1,10 +1,10 @@
 <?php
 //IMPORTANDO OS ARQUIVOS MODEL E BANCO
 $root = realpath($_SERVER["DOCUMENT_ROOT"]);
-require_once("$root/projetos/psiAdriana/model/model_produtos.php");
-require_once("$root/projetos/psiAdriana/model/model_admins.php");
-require_once("$root/projetos/psiAdriana/model/model_coments.php");
-require_once("$root/projetos/psiAdriana/model/banco.php");
+require_once("$root/model/model_produtos.php");
+require_once("$root/model/model_admins.php");
+require_once("$root/model/model_coments.php");
+require_once("$root/model/banco.php");
 
 class controller{
 

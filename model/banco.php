@@ -5,10 +5,10 @@ date_default_timezone_set('America/Sao_Paulo');
 
 // conexão com o banco de dados
 
-define('BD_SERVIDOR','localhost');
-define('BD_USUARIO','root');
-define('BD_SENHA','');
-define('BD_BANCO','psi_db');
+define('BD_SERVIDOR','psiadriana_db.mysql.dbaas.com.br');
+define('BD_USUARIO','psiadriana_db');
+define('BD_SENHA','Psidri@0306');
+define('BD_BANCO','psiadriana_db');
     
 class Banco{
 
@@ -33,11 +33,9 @@ class Banco{
             $stmt = $this->mysqli->query("SELECT * FROM tbl_admin WHERE user = '" . $user . "' AND senha = '" . $senha . "';");
 
             $total = mysqli_num_rows($stmt); 
-            $lista = $stmt->fetch_all(MYSQLI_ASSOC);
+            $lista = $stmt->fetch_assoc();
             
-            foreach ($lista as $l) {
-                $id_admin = $l['id_adm'];
-            }
+            $id_admin = $lista['id_adm'];
 
             if( $total > 0){
                 session_start();
@@ -123,7 +121,10 @@ class Banco{
             }
             
             $total = mysqli_num_rows($stmt); 
-            $lista = $stmt->fetch_all(MYSQLI_ASSOC);
+            $lista = array();
+            while($row = $stmt->fetch_assoc()){
+                $lista[] = $row;
+            }
             $f_lista = array();
             $i = 0;
             foreach ($lista as $l) {

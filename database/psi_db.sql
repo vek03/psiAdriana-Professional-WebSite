@@ -40,10 +40,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`id_adm`, `user`, `senha`) VALUES
-(1, '@vek', '123456'),
-(2, '@cabral', '123456'),
-(3, '@mari', '123456'),
-(4, '@psiAdriana', '123456');
+(1, '@vek', '123456');
 
 -- --------------------------------------------------------
 
@@ -80,10 +77,6 @@ CREATE TABLE `tbl_produto` (
 -- Extraindo dados da tabela `tbl_produto`
 --
 
-INSERT INTO `tbl_produto` (`id_prod`, `title`, `descr`, `valor`, `dt_lanc`, `num_pag`, `publico`, `img`, `link`) VALUES
-(1, 'EBOOK RE.VIVA', 'O Ebook RE.VIVA é um recurso terapêutico para ser utilizado por profissionais ou pela própria pessoa. Seu diferencial é que qualquer pessoa acima dos doze anos pode fazer uso.\r\n\r\nO Ebook RE.VIVA reúne mais de trinta ferramentas com exercícios de AUTOCONHECIMENTO e realização simples, prazerosa e inspiradora. Nessa jornada você vai SE DESCOBRIR e entender quais passos você precisa dar para trabalhar sua AUTOESTIMA e seu AMOR PRÓPRIO.\r\n\r\nA cada atividade você se surpreenderá com o resultado.\r\nRE.VIVA!', 29.99, 2022, 50, 'Mulheres', 'img/2.png', 'https://p.eduzz.com/1836586'),
-(2, '5 PASSOS PARA TER AUTOESTIMA', 'Mais do que estar satisfeito com a imagem física, a AUTOESTIMA tem relações com entender a si próprio, conhecer os seus pontos fortes e ser seguro de si. Ela é fundamental para todos os aspectos da vida de uma pessoa: nos relacionamentos, saúde e, também na vida profissional. Esse ebook além de ter um questionário que vai te ajudar a saber como está sua autoestima, ele vai te auxiliar a desenvolve-la em apenas cinco passos.', 0, 2022, 34, 'Mulheres', 'img/1.png', 'https://p.eduzz.com/1836603'),
-(3, 'TABULEIRO DAS EMOÇÕES', 'O tabuleiro das emoções é um jogo onde a criança vai poder falar dos seus sentimentos e emoções de uma forma leve e divertida. E o melhor, dá pra toda a família se divertir junta.', 0, 2022, 56, 'Mulheres', 'img/3.png', 'https://p.eduzz.com/1836612');
 
 --
 -- Índices para tabelas despejadas
